@@ -1,0 +1,26 @@
+{
+    "name": "sahu/tending-query",
+    "description": "获取github的热点项目",
+    "authors": [
+        {
+            "name": "cl",
+            "email": "568120554@qq.com"
+        }
+    ],
+    "require": {
+        "jaeger/querylist": "^4.0",
+        "predis/predis": "^1.1",
+        "vlucas/phpdotenv": "^2.5",
+        "monolog/monolog": "^1.23"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
