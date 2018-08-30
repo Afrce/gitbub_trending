@@ -32,7 +32,6 @@ class RecordTending
     public function getData($url){
         $html = file_get_contents($url);
         $ql = QueryList::html($html);
-
         $data = $ql->find('li[class=col-12 d-block width-full py-4 border-bottom]')->map(function($item){
             $project = substr($item->find('.d-inline-block.col-9.mb-1 a')->href,1);
             $arr = explode('/',$project);
